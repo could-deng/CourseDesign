@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include	layout="@layout/layout_toolbar" />
+	<LinearLayout 
+	    android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="20dp"
+		android:paddingRight="20dp"
+		android:layout_marginTop="20dp"
+		android:orientation="vertical">
+	    <EditText 
+	        android:id="@+id/login_et_username"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:drawablePadding="10dp"
+	        android:background="@drawable/bg_line_press"
+			android:hint="您的邮箱"
+			android:singleLine="true"
+			android:inputType="textEmailAddress"
+	        android:padding="10dp"
+            android:textSize="@dimen/new_textsize_14sp"
+	        />
+	    <EditText 
+	        android:id="@+id/login_et_password"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:drawablePadding="10dp"
+	        android:background="@drawable/bg_line_press"
+	        android:hint="请输入您的密码"
+	        android:padding="10dp"
+            android:textSize="@dimen/new_textsize_14sp"
+        	android:textCursorDrawable="@drawable/color_cursor"
+	        />
+	    <Button 
+	        android:id="@+id/bt_login"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bg_btn_yellow_selector"
+	        android:layout_marginTop="20dp"
+	        android:textSize="@dimen/new_textsize_18sp"
+	        android:padding="10dp"
+	        android:text="@string/login"
+			android:textColor="@color/full_white_text"
+        	android:textCursorDrawable="@drawable/color_cursor"
+	        />
+	</LinearLayout>    
+
+</LinearLayout>

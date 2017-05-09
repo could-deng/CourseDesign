@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CourseDesign</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!--     主页 -->
+    <string name="home">主页</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="login_profile">登录/注册</string>
+    <string name="setting">设置</string>
+    <string name="exit">退出</string>
+    <string name="private_info">个人信息</string>
+    <string name="friends">驴友</string>
+    <string name="hot_trip">热门旅游</string>
+    <string name="my_trip">我的行程</string>
+    <string name="private_set">个人定制</string>
+    <string name="trip_near_by">周边游</string>
+
+    <!--     视图 -->
+    <string name="back">返回</string>
+    <string name="title">主题</string>
+
+
+
+    <!--     登录 -->
+    <string name="login_ing">正在登录</string>
+    <string name="login_success">登录成功</string>
+    <string name="login_failure">登录失败</string>
+
+
+    <!--注册-->
+    <string name="register_ing">正在注册</string>
+    <string name="register_failure">注册失败</string>
+    <string name="register_success">注册成功</string>
+
+
+    <!--设置界面-->
+    <string name="logout_success">注销成功</string>
+    <string name="logout_fail">注销失败</string>
+    <string name="logout">退出登录</string>
+    <string name="have_not_login">还未登陆</string>
+    
+    <!-- 	play_item -->
+    <string name="view">景点</string>
+    <string name="food">美食</string>
+    <string name="hotel">酒店</string>
+    <string name="shopping">购物</string>
+    <string name="play">玩乐</string>
+    <string name="doc_trip">游记</string>
+    <string name="trip_round">路线</string>
+    <string name="trip_tip">旅行须知</string>
+
+
+    <string name="fragment_main">fragment_main</string>
+    <string name="fragment_second">已计划的行程</string>
+    <string name="hot_scence">热门景点</string>
+    <string name="create_new_trip">创建一个新行程</string>
+    <string name="new_trip">新计划</string>
+    <string name="planed_trip">计划中</string>
+    <string name="finished_trip">已完成</string>
+    <string name="titile_activity_date">选择出发日期</string>
+    <string name="title_activity_des">选择目的地</string>
+
+
+    <string-array name="jazz_artist_names">
+        <item>Brad Mehldau</item>
+        <item>Joshua Redman</item>
+        <item>Chick Corea</item>
+        <item>Kurt Rosenwinkel</item>
+        <item>Miles Davis</item>
+        <item>Wayne Shorter</item>
+        <item>Michael Brecker</item>
+        <item>Herbie Hancock</item>
+        <item>Joe Zawinul</item>
+        <item>Brian Blade</item>
+        <item>Jeff Ballard</item>
+        <item>Larry Grenadier</item>
+        <item>Keith Jarrett</item>
+        <item>McCoy Tyner</item>
+        <item>Stephon Harris</item>
+        <item>Mark Turner</item>
+    </string-array>
+
+    <string name="create_new">创建游记</string>
+    <string name="all_trip">游记</string>
+    <string name="xincheng">行程</string>
+    <string name="check_network">网络信号不是很好,请稍后再试</string>
+    <string name="check_network_out_time">网络异常,请检查网络</string>
+
+    <string name="trip_new">游记新闻</string>
+    <string name="ont_trip">游记一则</string>
+
+
+    <!-- 图片查看器 -->
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/layout_toolbar"/>
+
+    <View style="@style/fm_mine_viewpager_more_item_divider" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/element_margin"
+        >
+        <LinearLayout style="@style/fm_mine_viewpager_more_item_group">
+            <com.example.coursedesign.widget.MaterialRippleLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/info1"
+                        style="@style/more_item"
+                        android:text="123" />
+            </com.example.coursedesign.widget.MaterialRippleLayout>
+            <View style="@style/fm_mine_viewpager_more_item_divider" />
+            <com.example.coursedesign.widget.MaterialRippleLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/info2"
+                    style="@style/more_item"
+                    android:text="123" />
+            </com.example.coursedesign.widget.MaterialRippleLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <Button 
+        android:id="@+id/bt_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_btn_logout_selector"
+        android:textSize="@dimen/text_size_normal"
+        android:text="@string/logout"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <Button 
+        android:id="@+id/ttest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test_start_service"
+        />
+</LinearLayout>

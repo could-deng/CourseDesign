@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fitmix_black_gradual_bg"
+    android:orientation="vertical">
+
+    <!--<RadioGroup-->
+        <!--android:id="@+id/rg_music"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/radio_sport_music"-->
+            <!--style="@style/fm_music_viewpager_indicator"-->
+            <!--android:background="@drawable/viewpager_indicator_left_bg"-->
+            <!--android:checked="true"-->
+            <!--android:text="@string/fm_music_sport_music" />-->
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/radio_my_music"-->
+            <!--style="@style/fm_music_viewpager_indicator"-->
+            <!--android:background="@drawable/viewpager_indicator_right_bg"-->
+            <!--android:text="@string/fm_music_my_music" />-->
+
+    <!--</RadioGroup>-->
+
+    <com.example.coursedesign.widget.BounceViewPager
+        android:id="@+id/viewpager_music"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never" />
+</LinearLayout>

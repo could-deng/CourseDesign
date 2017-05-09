@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="144dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img_album_cover"
+            android:layout_width="match_parent"
+            android:layout_height="144dp"
+            android:background="@drawable/bg_ugc_personal"
+            android:contentDescription="@null"
+            fresco:actualImageScaleType="fitXY"
+            fresco:fadeDuration="300"
+            fresco:placeholderImage="@drawable/bg_ugc_personal"
+            fresco:placeholderImageScaleType="fitXY"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/banner_fg_color"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_album_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:shadowColor="@color/fitmix_black"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:singleLine="true"
+            android:textColor="@color/full_white_text"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/tv_album_subname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:shadowColor="@color/fitmix_black"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:singleLine="true"
+            android:textColor="@color/full_white_text"
+            android:textSize="@dimen/text_size_normal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/creat_play_list_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_create_new_trip"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:text="@string/create_new"
+            android:textColor="@color/full_white_text"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

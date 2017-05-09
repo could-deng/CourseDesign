@@ -1,0 +1,113 @@
+<resources>
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+    <!--
+    Theme customizations available in newer API levels can go in
+    res/values-vXX/styles.xml, while customizations related to
+    backward-compatibility can go here.
+    -->
+    </style>
+
+     Application theme.
+    <style name="AppTheme" parent="AppBaseTheme">
+    <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+
+    </style>
+
+    <!--左右方向切换-->
+    <style name="horizontal_slide" parent="AppTheme.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/AnimFade</item>
+    </style>
+    <style name="AnimFade" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_from_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_to_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_to_right</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_from_left</item>
+    </style>
+
+    <!--用户MainActivity-->
+    <style name="Main_slide" parent="AppTheme.NoActionBar">
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_to_down</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_from_up</item>
+    </style>
+    <!--上下方向切换-->
+    <style name="vertical_slide" parent="AppTheme.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/AnimVertical</item>
+    </style>
+    <style name="AnimVertical" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_from_down</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_to_up</item>
+    </style>
+    <!--<item name="android:activityCloseExitAnimation">@anim/slide_out_to_down</item>-->
+    <!--<item name="android:activityCloseEnterAnimation">@anim/slide_in_from_up</item>-->
+
+    <!--当我们从 A1 启动 A2 时，A2 出现在屏幕上，这个动画叫做 android:activityOpenEnterAnimation-->
+    <!--.当我们从 A1 启动 A2 时，A1 从屏幕上消失，这个动画叫做 android:activityOpenExitAnimation-->
+    <!--当我们从 A2 退出回到 A1 时，A2 从屏幕上消失，这个叫做 android:activityCloseExitAnimation-->
+    <!--当我们从 A2 退出回到 A1 时，A1 出现在屏幕上，这个叫做 android:activityCloseEnterAnimation-->
+
+    <style name="activity_main_nav_radio">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:drawablePadding">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+    <style name="more_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:drawableRight">@drawable/ic_more</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/element_padding</item>
+        <item name="android:paddingRight">@dimen/element_padding</item>
+        <item name="android:textColor">@color/gray_text</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:background">#FFFFFF</item>
+
+    </style>
+
+    <style name="fm_mine_viewpager_more_item_divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1.0dp</item>
+        <item name="android:background">#ECECEC</item>
+    </style>
+
+    <style name="fm_mine_viewpager_more_item_group">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="ripple_click_effect">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="com.fitmix.sdk:mrl_rippleAlpha">0.2</item>-->
+        <!--<item name="com.fitmix.sdk:mrl_rippleColor">#585858</item>-->
+        <!--<item name="com.fitmix.sdk:mrl_rippleHover">true</item>-->
+        <!--<item name="com.fitmix.sdk:mrl_rippleOverlay">true</item>-->
+        <!--<item name="com.fitmix.sdk:mrl_rippleDelayClick">false</item>-->
+    </style>
+
+    <style name="main_bar_text_style">
+        <item name="android:textColor">@color/dark_green</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+
+
+
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/pic_news_daily_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/pic_news_daily_pic"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:scaleType="fitCenter"
+        android:background="@drawable/bg_ugc_personal"
+        android:contentDescription="@null"
+        android:layout_gravity="center_horizontal"
+        fresco:actualImageScaleType="fitXY"
+        fresco:fadeDuration="300"
+        fresco:placeholderImage="@drawable/bg_ugc_personal"
+        fresco:placeholderImageScaleType="center"/>
+</LinearLayout>

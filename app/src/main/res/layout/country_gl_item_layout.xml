@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/country_gv_item_iv"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/loading_pic"
+        android:contentDescription="@null"
+        fresco:actualImageScaleType="fitXY"
+        fresco:fadeDuration="300"
+        fresco:placeholderImage="@drawable/loading_pic"
+        fresco:placeholderImageScaleType="fitXY"/>
+    <TextView
+        android:id="@+id/country_gv_item_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="国家名字"
+        android:textSize="@dimen/text_size_large"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        />
+</RelativeLayout>

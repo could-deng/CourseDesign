@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <Button
+        android:id="@+id/bt_coun1"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:text="country1"
+        />
+	<com.example.coursedesign.widget.ExpandGridView
+	    android:id="@+id/fragment_des_country_gv" 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:numColumns="3"
+	    android:horizontalSpacing="2dp"
+	    android:verticalSpacing="2dp"
+	    android:background="@android:color/transparent"
+	    android:listSelector="@android:color/transparent"
+	    ></com.example.coursedesign.widget.ExpandGridView>
+</LinearLayout>

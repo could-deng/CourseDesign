@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemlayout"
+    android:layout_width="match_parent"
+    android:layout_height="144dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/img_banner_cover"
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:background="@drawable/bg_ugc_personal"
+        fresco:placeholderImage="@drawable/bg_ugc_personal"
+        fresco:placeholderImageScaleType="fitXY"
+        fresco:roundWithOverlayColor="@android:color/transparent"
+       />
+
+</RelativeLayout>

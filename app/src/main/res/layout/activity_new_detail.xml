@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/img_temp"
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:contentDescription="@null"
+        fresco:actualImageScaleType="fitXY"
+        fresco:fadeDuration="300"
+        fresco:placeholderImage="@drawable/bg_ugc_personal"
+        fresco:placeholderImageScaleType="center" />
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:id="@+id/layout_header"
+            android:layout_width="match_parent"
+            android:layout_height="144dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/img_album_cover"
+                android:layout_width="match_parent"
+                android:layout_height="144dp"
+                android:contentDescription="@null"
+                fresco:actualImageScaleType="fitXY"
+                fresco:fadeDuration="300"
+                fresco:placeholderImage="@drawable/bg_ugc_personal"
+                fresco:placeholderImageScaleType="center" />
+
+            <LinearLayout
+                android:id="@+id/new_detail_content_header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#88000000"
+                android:orientation="vertical">
+
+                <!--toolbar-->
+                <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fitsSystemWindows="true">
+                    <TextView
+                        style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/trip_new"
+                        android:textColor="@color/textColorPrimary" />
+                </android.support.v7.widget.Toolbar>
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <com.example.coursedesign.widget.pulltorefresh.RefreshLayout
+            android:id="@+id/rl_trip_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <ListView
+                    android:id="@+id/lv_pic_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:listSelector="@android:color/transparent"
+                    android:divider="@null">
+                </ListView>
+        </com.example.coursedesign.widget.pulltorefresh.RefreshLayout>
+    </LinearLayout>
+</FrameLayout>
+

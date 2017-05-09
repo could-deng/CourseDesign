@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/layout_toolbar"/>
+    <LinearLayout
+        android:id="@+id/trip_progress"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <ImageView
+            android:id="@+id/progress_"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/progress_1"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/progress_disable"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/layout_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/calendarCenter"
+            style="@style/main_bar_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8dp" />
+
+        <ImageButton
+            android:id="@+id/calendarLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:padding="8dp"
+            android:src="@drawable/date_back" />
+
+        <ImageButton
+            android:id="@+id/calendarRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:padding="8dp"
+            android:src="@drawable/date_next" />
+
+        <com.example.coursedesign.widget.CalendarView
+            android:id="@+id/calendar"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/calendarCenter" />
+    </RelativeLayout>
+
+
+</LinearLayout>

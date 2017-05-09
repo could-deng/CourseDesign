@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+     >
+     <include	layout="@layout/layout_toolbar" />
+     <com.example.coursedesign.widget.ClearEditText
+        android:id="@+id/register_et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/bg_line_press"
+        android:gravity="center_horizontal"
+        android:hint="请输入您的邮箱"
+        android:singleLine="true"
+        android:inputType="textEmailAddress"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/two_black"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="@dimen/new_textsize_13sp"
+            />
+	<com.example.coursedesign.widget.ClearEditText
+		android:id="@+id/register_et_password"
+		android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_line_press"
+        android:gravity="center_horizontal"
+        android:hint="请输入密码"
+        android:inputType="number"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/two_black"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="@dimen/new_textsize_13sp" 
+		    
+		    />        
+	<FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp" >
+
+        <Button
+            android:id="@+id/bt_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/bg_btn_yellow_selector"
+            android:padding="10dp"
+            android:text="@string/register"
+            android:textColor="@color/white"
+            android:textSize="@dimen/new_textsize_15sp" />
+    </FrameLayout>
+
+</LinearLayout>

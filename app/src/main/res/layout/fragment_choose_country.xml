@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/fragment_work_type_lv"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:scrollbars="none"
+        ></ListView>
+    <com.example.coursedesign.widget.pulltorefresh.RefreshLayout
+        android:id="@+id/fragment_hot_des_refreshlo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+        <com.example.coursedesign.widget.ExpandGridView
+            android:id="@+id/fragment_choose_country_item_gv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@android:color/transparent"
+            android:horizontalSpacing="4px"
+            android:listSelector="#00000000"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:verticalSpacing="4px">
+        </com.example.coursedesign.widget.ExpandGridView>
+    </com.example.coursedesign.widget.pulltorefresh.RefreshLayout>
+</LinearLayout>

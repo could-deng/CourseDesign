@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- AppMsg color -->
+    <color name="alert">#CC0000</color>
+    <color name="confirm">#FF8800</color>
+    <color name="info">#669900</color>
+
+
+
+    <color name="blue">#33A1C9</color>
+    <color name="white">#ffffff</color>
+    <!-- 亮灰色 -->
+    <color name="lightgrey">#D3D3D3</color>
+    <!-- 亮灰色 -->
+    <color name="tan">#D2B48C</color>
+    <color name="Sgosh_White">#C0C0C0</color>
+
+    <!--     登录注册 -->
+    <color name="new_yellow">#F3B800</color>
+    <color name="new_yellow_90">#90F3B800</color>
+    <color name="new_yellow_32">#10F3B800</color>
+
+    <color name="new_yellow_deep">#60D09E00</color>
+    <color name="half_new_yellow">#99F3B800</color>
+
+    <color name="two_black">#99000000</color>
+    <color name="three_black">#B3B3B3</color>
+    <color name="four_black">#EBEBEB</color>
+    <color name="new_blue">#62DCC0</color>
+    <color name="black_80_percent">#90000000</color>
+    <color name="pink_bg">#FA6289</color>
+    <color name="pink_line">#F83B6D</color>
+
+    <color name="black">#000000</color>
+    <color name="gray">#eeeeee</color>
+
+
+
+    <color name="textColorPrimary">#FFFFFF</color>
+    <!--设置-->
+    <color name="gray_text">#2A2A2A</color>
+
+    <color name="windowDarkBackground">#3E3C49</color>
+
+    <color name="pic_selected">#32FFFFFF</color>
+
+
+
+
+
+    <!--toolbar背景-->
+    <color name="colorPrimary">#FF201F26</color>
+    <!--状态栏背景色-->
+    <color name="colorPrimaryDark">#FF201F26</color>
+    <!--窗口背景色，全部activity默认背景色（style上定义的父类设置了）-->
+    <color name="windowBackground">#E8E6EA</color>
+
+    <color name="fitmix_bottom_black">#302F36</color>
+    
+    
+    
+    
+    
+    <!--两个绿色-->
+    <color name="dark_green">#22ad5a</color>
+    <color name="slient_green">#40c075</color>
+
+    <!--progress  123-->
+    <color name="progress_disable">#b2b2b2</color>
+    <color name="progress_1">#efcc00</color>
+    <color name="progress_2">#f59e13</color>
+    <color name="progress_3">#f07203</color>
+
+
+    <color name="fitmix_banner_bg">#99201F26</color>
+    <color name="fitmix_black">#2A2A2A</color>
+
+    <color name="fitmix_bg_black">#2B2A33</color>
+    <color name="full_white_text">#FFFFFFFF</color>
+
+    <color name="colorAccent">@color/slient_green</color>
+</resources>

@@ -1,0 +1,267 @@
+<resources>
+    <!-- 圆形ImageView -->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension"/>
+        <attr name="border_color" format="color"/>
+    </declare-styleable>
+    <!-- 圆形进度条 -->
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color"/>
+        <attr name="roundProgressColor" format="color"/>
+        <attr name="roundWidth" format="dimension"/>
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="max" format="integer"/>
+        <attr name="textIsDisplayable" format="boolean"/>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+    <!-- gif view -->
+    <declare-styleable name="GifView">
+        <attr name="gif" format="reference" />
+        <attr name="paused" format="boolean" />
+        <attr name="round" format="boolean" />
+        <attr name="autoRotate" format="boolean" />
+        <attr name="gifViewStyle" format="reference" />
+    </declare-styleable>
+
+    <!-- wheel spinner-->
+    <declare-styleable name="AbstractWheelView">
+        <attr name="visibleItems" format="integer"/>
+        <attr name="isAllVisible" format="boolean"/>
+        <attr name="itemOffsetPercent" format="integer"/>
+        <attr name="itemsPadding" format="dimension"/>
+        <attr name="selectionDividerDimmedAlpha" format="integer"/>
+        <attr name="selectionDividerActiveAlpha" format="integer"/>
+        <attr name="selectionDivider" format="reference"/>
+        <attr name="itemsDimmedAlpha" format="integer"/>
+        <attr name="isCyclic" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="WheelVerticalView">
+        <attr name="selectionDividerHeight" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="WheelHorizontalView">
+        <attr name="selectionDividerWidth" format="dimension"/>
+    </declare-styleable>
+    <attr name="abstractWheelViewStyle" format="reference" />
+
+    <!-- 环形进度条 -->
+    <declare-styleable name="ArcProgress">
+        <attr name="arc_progress" format="integer"/>
+        <attr name="arc_angle" format="float"/>
+        <attr name="arc_stroke_width" format="dimension"/>
+        <attr name="arc_max" format="integer"/>
+        <attr name="arc_unfinished_color" format="color"/>
+        <attr name="arc_finished_color" format="color"/>
+    </declare-styleable>
+
+    <!-- 音乐进度条 -->
+    <declare-styleable name="MusicSeekbar">
+        <attr name="progress" format="integer"/>
+        <attr name="track_stroke_width" format="float"/>
+        <attr name="unfinished_color" format="color"/>
+        <attr name="finished_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="MaterialRippleLayout">
+        <attr name="mrl_rippleColor" format="color" localization="suggested" />
+        <attr name="mrl_rippleDimension" format="dimension" localization="suggested" />
+        <attr name="mrl_rippleOverlay" format="boolean" localization="suggested" />
+        <attr name="mrl_rippleAlpha" format="float" localization="suggested" />
+        <attr name="mrl_rippleDuration" format="integer" localization="suggested" />
+        <attr name="mrl_rippleFadeDuration" format="integer" localization="suggested" />
+        <attr name="mrl_rippleHover" format="boolean" localization="suggested" />
+        <attr name="mrl_rippleBackground" format="color" localization="suggested" />
+        <attr name="mrl_rippleDelayClick" format="boolean" localization="suggested" />
+        <attr name="mrl_ripplePersistent" format="boolean" localization="suggested" />
+        <attr name="mrl_rippleInAdapter" format="boolean" localization="suggested" />
+        <attr name="mrl_rippleRoundedCorners" format="dimension" localization="suggested" />
+    </declare-styleable>
+
+    <declare-styleable name="MaterialProgressBar">
+        <!-- Style of progress drawable: horizontal or circular. Defaults to circular. -->
+        <attr name="mpb_progressStyle" format="enum">
+            <enum name="circular" value="0" />
+            <enum name="horizontal" value="1" />
+        </attr>
+        <!--
+          ~ Whether both determinate and indeterminate drawables should be set on this progress bar.
+          ~ Determinate ring progress drawable is not supported yet. Defaults to false.
+          -->
+        <attr name="mpb_setBothDrawables" format="boolean" />
+        <!-- Whether progress drawable should use its intrinsic padding. Defaults to true. -->
+        <attr name="mpb_useIntrinsicPadding" format="boolean" />
+        <!--
+          ~ Whether progress drawable should show a track. Defaults to true for horizontal progress
+          ~ drawable, false otherwise.
+          -->
+        <attr name="mpb_showTrack" format="boolean" />
+        <attr name="android:tint" />
+        <attr name="mpb_tintMode" format="enum">
+            <enum name="src_over" value="3" />
+            <enum name="src_in" value="5" />
+            <enum name="src_atop" value="9" />
+            <enum name="multiply" value="14" />
+            <enum name="screen" value="15" />
+            <enum name="add" value="16" />
+        </attr>
+    </declare-styleable>
+
+    <!-- These top three attributes are not accessible to library users -->
+    <attr name="md_divider" format="color" />
+
+    <!-- Accessible global theming attributes -->
+    <attr name="md_dark_theme" format="boolean" />
+    <attr name="md_background_color" format="color" />
+    <attr name="md_icon" format="reference" />
+    <attr name="md_icon_max_size" format="dimension" />
+    <attr name="md_icon_limit_icon_to_default_size" format="boolean" />
+    <attr name="md_title_color" format="color" />
+    <attr name="md_content_color" format="color" />
+    <attr name="md_link_color" format="color" />
+    <attr name="md_positive_color" format="color" />
+    <attr name="md_neutral_color" format="color" />
+    <attr name="md_negative_color" format="color" />
+    <attr name="md_widget_color" format="color" />
+    <attr name="md_item_color" format="color" />
+    <attr name="md_divider_color" format="color" />
+    <attr name="md_list_selector" format="reference" />
+    <attr name="md_btn_stacked_selector" format="reference" />
+    <attr name="md_btn_positive_selector" format="reference" />
+    <attr name="md_btn_neutral_selector" format="reference" />
+    <attr name="md_btn_negative_selector" format="reference" />
+    <attr name="md_btn_ripple_color" format="color" />
+    <attr name="md_title_gravity" format="enum">
+        <enum name="start" value="0" />
+        <enum name="center" value="1" />
+        <enum name="end" value="2" />
+    </attr>
+    <attr name="md_content_gravity" format="enum">
+        <enum name="start" value="0" />
+        <enum name="center" value="1" />
+        <enum name="end" value="2" />
+    </attr>
+    <attr name="md_btnstacked_gravity" format="enum">
+        <enum name="start" value="0" />
+        <enum name="center" value="1" />
+        <enum name="end" value="2" />
+    </attr>
+    <attr name="md_items_gravity" format="enum">
+        <enum name="start" value="0" />
+        <enum name="center" value="1" />
+        <enum name="end" value="2" />
+    </attr>
+    <attr name="md_buttons_gravity" format="enum">
+        <enum name="start" value="0" />
+        <enum name="center" value="1" />
+        <enum name="end" value="2" />
+    </attr>
+    <declare-styleable name="MDRootLayout">
+        <attr name="md_reduce_padding_no_title_no_buttons" format="boolean" />
+    </declare-styleable>
+    <attr name="md_medium_font" format="string" />
+    <attr name="md_regular_font" format="string" />
+
+    <!--pull to refresh-->
+    <declare-styleable name="PullToRefreshView">
+        <attr name="ptr_type" format="enum">
+            <enum name="f" value="0"/>
+        </attr>
+        <attr name="ptr_direction">
+            <enum name="top" value="0" />
+            <enum name="bottom" value="1" />
+            <enum name="both" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <!--view pager circle indicator-->
+    <declare-styleable name="CircleIndicator">
+        <attr name="ci_width" format="dimension"/>
+        <attr name="ci_height" format="dimension"/>
+        <attr name="ci_margin" format="dimension"/>
+        <attr name="ci_animator" format="reference"/>
+        <attr name="ci_animator_reverse" format="reference"/>
+        <attr name="ci_drawable" format="reference"/>
+        <attr name="ci_drawable_unselected" format="reference"/>
+    </declare-styleable>
+
+    <!-- 环形进度条 -->
+    <declare-styleable name="SimpleViewPagerIndicator">
+        <attr name="text_color" format="color"/>
+        <attr name="text_size" format="dimension"/>
+        <attr name="indicator_color" format="color"/>
+        <attr name="indicator_width" format="dimension"/>
+        <attr name="indicator_height" format="dimension"/>
+    </declare-styleable>
+
+    <!--U crop-->
+    <declare-styleable name="ucrop_UCropView">
+
+        <!--Crop image view-->
+        <attr name="ucrop_aspect_ratio_x" format="float"/>
+        <attr name="ucrop_aspect_ratio_y" format="float"/>
+
+        <!--Overlay view-->
+        <attr name="ucrop_show_oval_crop_frame" format="boolean"/>
+        <attr name="ucrop_oval_dimmed_layer" format="boolean"/>
+        <attr name="ucrop_dimmed_color" format="color"/>
+
+        <attr name="ucrop_grid_stroke_size" format="dimension"/>
+        <attr name="ucrop_grid_color" format="color"/>
+        <attr name="ucrop_grid_row_count" format="integer"/>
+        <attr name="ucrop_grid_column_count" format="integer"/>
+        <attr name="ucrop_show_grid" format="boolean"/>
+
+        <attr name="ucrop_frame_stroke_size" format="dimension"/>
+        <attr name="ucrop_frame_color" format="color"/>
+        <attr name="ucrop_show_frame" format="boolean"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="ucrop_AspectRatioTextView">
+
+        <attr name="ucrop_artv_ratio_title" format="string"/>
+
+        <attr name="ucrop_artv_ratio_x" format="float"/>
+        <attr name="ucrop_artv_ratio_y" format="float"/>
+
+    </declare-styleable>
+
+    <!-- Defines the custom XML attributes supported for a HorizontalListView -->
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+
+    <declare-styleable name="DragSortListView">
+        <attr name="collapsed_height" format="dimension" />
+        <attr name="drag_scroll_start" format="float" />
+        <attr name="max_drag_scroll_speed" format="float" />
+        <attr name="float_background_color" format="color" />
+        <attr name="remove_mode">
+            <enum name="clickRemove" value="0" />
+            <enum name="flingRemove" value="1" />
+        </attr>
+        <attr name="track_drag_sort" format="boolean"/>
+        <attr name="float_alpha" format="float"/>
+        <attr name="slide_shuffle_speed" format="float"/>
+        <attr name="remove_animation_duration" format="integer"/>
+        <attr name="drop_animation_duration" format="integer"/>
+        <attr name="drag_enabled" format="boolean" />
+        <attr name="sort_enabled" format="boolean" />
+        <attr name="remove_enabled" format="boolean" />
+        <attr name="drag_start_mode">
+            <enum name="onDown" value="0" />
+            <enum name="onMove" value="1" />
+            <enum name="onLongPress" value="2"/>
+        </attr>
+        <attr name="drag_handle_id" format="integer" />
+        <attr name="fling_handle_id" format="integer" />
+        <attr name="click_remove_id" format="integer" />
+        <attr name="use_default_controller" format="boolean" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.coursedesign">
+    <!-- 环信Required -->
+    <!--<uses-permission android:name="android.permission.VIBRATE" />-->
+    <!--<uses-permission android:name="android.permission.INTERNET" />-->
+    <!--<uses-permission android:name="android.permission.RECORD_AUDIO" />-->
+    <!--<uses-permission android:name="android.permission.CAMERA" />-->
+    <!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />-->
+    <!--<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />-->
+    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+    <!--<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>-->
+    <!--<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />-->
+    <!--<uses-permission android:name="android.permission.GET_TASKS" />-->
+    <!--<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />-->
+    <!--<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />-->
+    <!--<uses-permission android:name="android.permission.WAKE_LOCK" />-->
+    <!--<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />-->
+    <!--<uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+
+
+    <!-- 这个权限用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <!-- 这个权限用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <!-- 用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <!-- 访问网络，网络定位需要上网-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+
+
+    <!--bmob配置所需增加的权限-->
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+
+    <application
+        android:name="CourseDesignAPP"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <!--activeAndorid数据库版本声明-->
+        <!--<meta-data-->
+            <!--android:name="AA_DB_NAME"-->
+            <!--android:value="dyq.db" />-->
+        <!--<meta-data-->
+            <!--android:name="AA_DB_VERSION"-->
+            <!--android:value="1.0" />-->
+
+        <!-- 设置环信应用的appkey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="2323#coursedesign" />
+
+        <!-- 声明sdk所需的service -->
+        <service
+            android:name="com.easemob.chat.EMChatService"
+            android:exported="true" />
+        <!-- 声明sdk所需的receiver -->
+        <receiver android:name="com.easemob.chat.EMMonitorReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <!--         百度地图声明 -->
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote">
+        </service>
+        <!-- 		百度地图key -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="yW9poybTZPcBZvGXQ65x6trN" />
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="0b3f24c704bf789577edf5bb588586eb"/>
+
+        <!-- 		定位服务 -->
+        <service android:name="com.example.coursedesign.service.LocationService"></service>
+
+
+        <!--         activity基类 -->
+        <activity
+            android:name="com.example.coursedesign.activity.BaseFragmentActivity"
+            ></activity>
+        <!--          主页面 -->
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Main_slide"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--         登录 -->
+        <activity
+            android:name="com.example.coursedesign.activity.LoginActivity"
+            android:theme="@style/horizontal_slide"
+            android:launchMode="singleTask"
+            ></activity>
+        <activity
+            android:name="com.example.coursedesign.activity.RegisterActivity"
+            android:theme="@style/horizontal_slide"
+            android:launchMode="singleTask"
+            ></activity>
+        <activity
+            android:name="com.example.coursedesign.activity.HotDesitinationActivity"
+            android:theme="@style/horizontal_slide"
+            ></activity>
+        <activity
+            android:name="com.example.coursedesign.activity.MapActivity"
+            android:theme="@style/horizontal_slide"
+            android:launchMode="singleTask"
+            >
+
+        </activity>
+        <activity android:name=".activity.BasicMapActivity"
+            >
+
+        </activity>
+        <activity
+            android:name="com.example.coursedesign.activity.SettingActivity"
+            android:theme="@style/horizontal_slide"
+            ></activity>
+
+        <activity
+            android:name="com.example.coursedesign.activity.ChooseDateActivity"
+            android:theme="@style/vertical_slide"
+            ></activity>
+
+        <activity android:name="com.example.coursedesign.activity.CityInfoActivity"
+            android:theme="@style/horizontal_slide"
+            ></activity>
+
+        <activity android:name=".activity.TripListActivity"
+            android:theme="@style/horizontal_slide"
+            android:label="Multi-select list">
+
+        </activity>
+        <activity android:name=".activity.MyTripActivity"
+            android:theme="@style/vertical_slide">
+        </activity>
+        <activity android:name=".activity.MySingleTripActivity"
+            android:theme="@style/vertical_slide"/>
+        <activity android:name=".activity.PicNewsActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name=".activity.ImagePagerActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
